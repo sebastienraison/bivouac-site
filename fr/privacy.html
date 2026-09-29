@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
 <title>Bivouac : politique de confidentialité</title>
+<meta name="description" content="Politique de confidentialité de Bivouac, l'application Android de préparation et de suivi de randonnées sur plusieurs jours. Bivouac ne collecte aucune donnée personnelle.">
+<link rel="alternate" hreflang="en" href="../privacy">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -17,8 +18,100 @@
 
 <main>
 <h1>Politique de confidentialité</h1>
-<p class="lead">Cette page est en préparation.</p>
+<p class="meta">Dernière mise à jour : 29 septembre 2026</p>
+
+<p>Bivouac est une application Android de préparation et de suivi de randonnées sur plusieurs jours, publiée par Sébastien Raison. Cette politique s'applique à toutes les versions de l'application, qu'elle ait été installée depuis Google Play, F-Droid ou GitHub.</p>
+
+<h2>En bref</h2>
+<div class="callout">
+  <p><strong>Bivouac ne collecte aucune donnée personnelle.</strong> Il n'y a ni compte, ni serveur géré par le développeur, ni publicité, ni statistiques d'usage, ni rapport de plantage. Tout ce que vous confiez à l'application reste sur votre appareil.</p>
+</div>
+<p>Bivouac est un logiciel libre (GPL-3.0). Son code source est public, chaque affirmation de cette page est donc vérifiable : <a href="https://github.com/sebastienraison/Bivouac">github.com/sebastienraison/Bivouac</a>.</p>
+
+<h2>Données stockées sur votre appareil</h2>
+<p>Bivouac enregistre dans son espace privé, que les autres applications ne peuvent pas lire :</p>
+<ul>
+  <li>les traces GPX que vous importez, ainsi que les bivouacs et les étapes que vous planifiez</li>
+  <li>votre Journal : randos réalisées, notes, tags et statistiques</li>
+  <li>une copie des photos que vous attachez à une rando, avec la position GPS et la date qu'elles contiennent</li>
+  <li>vos réglages</li>
+</ul>
+<p>Rien de tout cela n'est envoyé au développeur, ni à qui que ce soit.</p>
+
+<h2>Votre position</h2>
+<p>Bivouac n'accède pas à la position de votre appareil. L'application n'a aucune permission de localisation.</p>
+<p>Les seules positions qu'elle manipule sont celles des fichiers que vous lui confiez : les points d'une trace GPX, et la position GPS enregistrée dans une photo.</p>
+
+<h2>Connexions réseau</h2>
+<p>Bivouac se connecte à Internet pour une seule raison : télécharger les tuiles de carte. Ces connexions sont en HTTPS. Elles vont directement de votre appareil au fournisseur de cartes, jamais par le développeur.</p>
+<div class="table">
+<table>
+  <thead><tr><th>Service</th><th>Quand</th><th>Ce que le service peut voir</th></tr></thead>
+  <tbody>
+    <tr><td>OpenTopoMap<br>carte par défaut</td><td>Dès qu'une carte est affichée</td><td>Votre adresse IP, la zone de carte consultée, le nom de l'application</td></tr>
+    <tr><td>Esri World Imagery<br>fond satellite</td><td>Seulement si vous choisissez ce fond</td><td>Idem</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Les tuiles téléchargées sont conservées dans un cache sur votre appareil, ce qui réduit les requêtes suivantes.</p>
+<p>Le bouton météo ouvre le site Meteoblue dans votre navigateur, pour des coordonnées arrondies à deux décimales (environ un kilomètre). Rien n'est envoyé tant que vous n'appuyez pas sur ce bouton. À partir de là, c'est la politique du site Meteoblue qui s'applique.</p>
+<p>Esri et Meteoblue sont des services non libres. Un seul interrupteur dans les Réglages, « Désactiver les fonctions non libres », coupe les deux.</p>
+<p>Ces services sont gérés par des tiers et ont leur propre politique de confidentialité : <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://www.esri.com/en-us/privacy/overview">Esri</a>, <a href="https://www.meteoblue.com">Meteoblue</a>.</p>
+
+<h2>Permissions</h2>
+<div class="table">
+<table>
+  <thead><tr><th>Permission</th><th>Pourquoi</th></tr></thead>
+  <tbody>
+    <tr><td>Internet, état du réseau</td><td>Télécharger les tuiles de carte</td></tr>
+    <tr><td>Lecture des images</td><td>Vous laisser choisir les photos à attacher à une rando. À partir d'Android 14, l'accès limité aux photos que vous sélectionnez est pris en charge</td></tr>
+    <tr><td>Position des médias</td><td>Lire la position GPS enregistrée dans une photo, pour la placer sur la trace</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Les permissions photo ne sont demandées que lorsque vous utilisez la fonction photos. Cette fonction peut être entièrement désactivée dans les Réglages : l'accès à la galerie n'est alors jamais demandé.</p>
+
+<h2>Sauvegardes</h2>
+<ul>
+  <li><strong>La sauvegarde de Bivouac.</strong> Depuis les Réglages, vous pouvez exporter toutes vos données dans un fichier. Vous choisissez sa destination. Ce fichier vous appartient : Bivouac n'en garde aucune copie ailleurs.</li>
+  <li><strong>La sauvegarde Android.</strong> Si la sauvegarde est activée sur votre appareil, Android peut inclure les données de Bivouac, photos exclues, dans la sauvegarde stockée sur votre compte Google. C'est une fonction d'Android, qui se règle dans les paramètres de votre appareil. Voir <a href="https://support.google.com/android/answer/2819582?hl=fr">la documentation de Google</a>.</li>
+</ul>
+
+<h2>Sécurité</h2>
+<p>Vos données sont enregistrées dans l'espace privé de l'application, protégé par Android : les autres applications n'y ont pas accès. Les connexions vers les fournisseurs de cartes sont chiffrées. Aucune donnée n'est transmise au développeur : il n'en existe donc aucune copie ailleurs que sur votre appareil et dans vos propres sauvegardes. Le fichier de sauvegarde que vous exportez n'est pas chiffré, conservez-le en lieu sûr.</p>
+
+<h2>Durée de conservation et suppression</h2>
+<p>Vos données restent sur votre appareil jusqu'à ce que vous les supprimiez. Vous pouvez :</p>
+<ul>
+  <li>supprimer une trace, une rando ou une photo depuis l'application</li>
+  <li>effacer les données de l'application depuis les paramètres Android</li>
+  <li>désinstaller l'application, ce qui supprime tout ce qu'elle a enregistré sur l'appareil</li>
+</ul>
+<p>Si la sauvegarde Android est activée, une copie peut subsister sur votre compte Google. Elle se gère depuis les paramètres de sauvegarde de votre appareil.</p>
+<p>Le développeur ne détient aucune de vos données : il n'a donc rien à supprimer de son côté.</p>
+
+<h2>Ce site</h2>
+<p>Cette page et le site bivouac.rseb.net sont hébergés par GitHub Pages. Comme tout hébergeur, GitHub enregistre l'adresse IP des visiteurs, pour des raisons de sécurité. Ce traitement est régi par la <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement">déclaration de confidentialité de GitHub</a>, et non par la présente politique, qui porte sur l'application.</p>
+
+<h2>Contact</h2>
+<address>
+  Sébastien Raison<br>
+  <a href="mailto:bivouac@rseb.net">bivouac@rseb.net</a>
+</address>
+<p>Vous pouvez aussi ouvrir un ticket : <a href="https://github.com/sebastienraison/Bivouac/issues">github.com/sebastienraison/Bivouac/issues</a>.</p>
+
+<h2>Révisions</h2>
+<div class="table">
+<table>
+  <thead><tr><th>Date</th><th>Motif</th></tr></thead>
+  <tbody>
+    <tr><td>29 septembre 2026</td><td>Première version</td></tr>
+  </tbody>
+</table>
+</div>
 </main>
+
+<footer class="site">Bivouac est un logiciel libre, publié sous licence GPL-3.0.</footer>
 
 </div>
 </body>

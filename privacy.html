@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
 <title>Bivouac: Privacy Policy</title>
+<meta name="description" content="Privacy policy of Bivouac, the Android app for planning and logging multi-day hikes. Bivouac does not collect any personal data.">
+<link rel="alternate" hreflang="fr" href="fr/privacy">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +18,100 @@
 
 <main>
 <h1>Privacy Policy</h1>
-<p class="lead">This page is being prepared.</p>
+<p class="meta">Last updated: 29 September 2026</p>
+
+<p>Bivouac is an Android app for planning and logging multi-day hikes, published by Sébastien Raison. This policy applies to every version of the app, whether installed from Google Play, F-Droid or GitHub.</p>
+
+<h2>In short</h2>
+<div class="callout">
+  <p><strong>Bivouac does not collect any personal data.</strong> There is no account, no server run by the developer, no advertising, no analytics and no crash reporting. Everything you put into the app stays on your device.</p>
+</div>
+<p>Bivouac is free software (GPL-3.0). Its source code is public, so every statement on this page can be checked: <a href="https://github.com/sebastienraison/Bivouac">github.com/sebastienraison/Bivouac</a>.</p>
+
+<h2>Data stored on your device</h2>
+<p>Bivouac stores the following in its private storage, which other apps cannot read:</p>
+<ul>
+  <li>the GPX tracks you import, and the bivouac points and daily stages you plan</li>
+  <li>your Journal: logged hikes, notes, tags and statistics</li>
+  <li>a copy of the photos you attach to a hike, with the GPS position and the date they contain</li>
+  <li>your settings</li>
+</ul>
+<p>None of this is sent to the developer or to anyone else.</p>
+
+<h2>Your location</h2>
+<p>Bivouac does not access the location of your device. It has no location permission.</p>
+<p>The only positions the app handles are those contained in the files you give it: the points of a GPX track, and the GPS position stored in a photo.</p>
+
+<h2>Network connections</h2>
+<p>Bivouac connects to the internet for one purpose: downloading map tiles. These connections use HTTPS. They go directly from your device to the map provider, never through the developer.</p>
+<div class="table">
+<table>
+  <thead><tr><th>Service</th><th>When</th><th>What the service can see</th></tr></thead>
+  <tbody>
+    <tr><td>OpenTopoMap<br>default map</td><td>Whenever a map is displayed</td><td>Your IP address, the map area you are viewing, the name of the app</td></tr>
+    <tr><td>Esri World Imagery<br>satellite layer</td><td>Only if you select this layer</td><td>Same as above</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Downloaded tiles are kept in a cache on your device, which reduces later requests.</p>
+<p>The weather button opens the Meteoblue website in your browser, for coordinates rounded to two decimals (about one kilometre). Nothing is sent until you tap that button. From there on, the Meteoblue website applies its own policy.</p>
+<p>Esri and Meteoblue are non-free services. A single switch in Settings, “Disable non-free features”, turns both off.</p>
+<p>These services are run by third parties and have their own privacy policies: <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://www.esri.com/en-us/privacy/overview">Esri</a>, <a href="https://www.meteoblue.com">Meteoblue</a>.</p>
+
+<h2>Permissions</h2>
+<div class="table">
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Internet, network state</td><td>Download map tiles</td></tr>
+    <tr><td>Read images</td><td>Let you choose the photos to attach to a hike. On Android 14 and later, access limited to the photos you select is supported</td></tr>
+    <tr><td>Media location</td><td>Read the GPS position stored in a photo, to place it on the track</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Photo permissions are requested only when you use the photo feature. That feature can be turned off entirely in Settings, in which case gallery access is never requested.</p>
+
+<h2>Backups</h2>
+<ul>
+  <li><strong>Bivouac's own backup.</strong> From Settings, you can export all your data to a file. You choose where it goes. That file is yours: Bivouac keeps no copy elsewhere.</li>
+  <li><strong>Android backup.</strong> If backup is enabled on your device, Android may include Bivouac's data, photos excluded, in the backup stored in your Google account. This is a feature of Android, controlled from your device settings. See <a href="https://support.google.com/android/answer/2819582">Google's documentation</a>.</li>
+</ul>
+
+<h2>Security</h2>
+<p>Your data is stored in the app's private storage, protected by Android: other apps cannot access it. Connections to the map providers are encrypted. No data is sent to the developer, so no copy exists anywhere other than on your device and in your own backups. The backup file you export is not encrypted: keep it in a safe place.</p>
+
+<h2>How long data is kept, and how to delete it</h2>
+<p>Your data stays on your device until you delete it. You can:</p>
+<ul>
+  <li>delete a track, a hike or a photo from within the app</li>
+  <li>clear the app's data from the Android settings</li>
+  <li>uninstall the app, which removes everything it stored on the device</li>
+</ul>
+<p>If Android backup is enabled, a copy may remain in your Google account. It is managed from the backup settings of your device.</p>
+<p>The developer holds none of your data, so there is nothing to delete on his side.</p>
+
+<h2>This website</h2>
+<p>This page and the bivouac.rseb.net website are hosted by GitHub Pages. Like any hosting provider, GitHub logs the IP address of visitors, for security purposes. That processing is governed by the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>, not by this policy, which covers the app.</p>
+
+<h2>Contact</h2>
+<address>
+  Sébastien Raison<br>
+  <a href="mailto:bivouac@rseb.net">bivouac@rseb.net</a>
+</address>
+<p>You can also open an issue: <a href="https://github.com/sebastienraison/Bivouac/issues">github.com/sebastienraison/Bivouac/issues</a>.</p>
+
+<h2>Revisions</h2>
+<div class="table">
+<table>
+  <thead><tr><th>Date</th><th>Reason</th></tr></thead>
+  <tbody>
+    <tr><td>29 September 2026</td><td>First version</td></tr>
+  </tbody>
+</table>
+</div>
 </main>
+
+<footer class="site">Bivouac is free software, released under the GPL-3.0 licence.</footer>
 
 </div>
 </body>
