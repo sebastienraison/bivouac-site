@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" role="img" aria-label="Bivouac">
+  <rect x="18" y="18" width="72" height="72" rx="16" fill="#F57C00"/>
+  <path d="M30,76 L54,30 L78,76 Z" fill="#FFFFFF"/>
+  <path d="M54,50 L62,76 L46,76 Z" fill="#F57C00"/>
+</svg>

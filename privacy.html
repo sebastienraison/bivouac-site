@@ -1,24 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="politique">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bivouac: Privacy Policy</title>
 <meta name="description" content="Privacy policy of Bivouac, the Android app for planning and logging multi-day hikes. Bivouac does not collect any personal data.">
-<link rel="alternate" hreflang="fr" href="fr/privacy">
+<link rel="canonical" href="https://bivouac.rseb.net/privacy">
+<link rel="alternate" hreflang="en" href="https://bivouac.rseb.net/privacy">
+<link rel="alternate" hreflang="fr" href="https://bivouac.rseb.net/fr/privacy">
+<link rel="alternate" hreflang="x-default" href="https://bivouac.rseb.net/privacy">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
-
-<header class="site">
-  <a class="brand" href="./">Bivouac</a>
-  <nav><a href="fr/privacy" lang="fr" hreflang="fr">Français</a></nav>
-</header>
-
+<span id="site"></span>
+<header class="haut"><div class="col">
+  <a class="marque" href="./"><img src="img/logo.svg" alt="" width="44" height="44">Bivouac</a>
+  <a class="langue" href="fr/privacy#site" lang="fr" hreflang="fr">Français</a>
+</div></header>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Last updated: 29 September 2026</p>
+<p class="meta">Last updated: 2 October 2026</p>
 
 <p>Bivouac is an Android app for planning and logging multi-day hikes, published by Sébastien Raison. This policy applies to every version of the app, whether installed from Google Play, F-Droid or GitHub.</p>
 
@@ -49,6 +51,7 @@
   <thead><tr><th>Service</th><th>When</th><th>What the service can see</th></tr></thead>
   <tbody>
     <tr><td>OpenTopoMap<br>default map</td><td>Whenever a map is displayed</td><td>Your IP address, the map area you are viewing, the name of the app</td></tr>
+    <tr><td>OpenStreetMap<br>Standard layer</td><td>Only if you select this layer</td><td>Same as above</td></tr>
     <tr><td>Esri World Imagery<br>satellite layer</td><td>Only if you select this layer</td><td>Same as above</td></tr>
   </tbody>
 </table>
@@ -56,7 +59,7 @@
 <p>Downloaded tiles are kept in a cache on your device, which reduces later requests.</p>
 <p>The weather button opens the Meteoblue website in your browser, for coordinates rounded to two decimals (about one kilometre). Nothing is sent until you tap that button. From there on, the Meteoblue website applies its own policy.</p>
 <p>Esri and Meteoblue are non-free services. A single switch in Settings, “Disable non-free features”, turns both off.</p>
-<p>These services are run by third parties and have their own privacy policies: <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://www.esri.com/en-us/privacy/overview">Esri</a>, <a href="https://www.meteoblue.com">Meteoblue</a>.</p>
+<p>These services are run by third parties and have their own privacy policies: <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap</a>, <a href="https://www.esri.com/en-us/privacy/overview">Esri</a>, <a href="https://www.meteoblue.com">Meteoblue</a>.</p>
 
 <h2>Permissions</h2>
 <div class="table">
@@ -106,13 +109,14 @@
   <thead><tr><th>Date</th><th>Reason</th></tr></thead>
   <tbody>
     <tr><td>29 September 2026</td><td>First version</td></tr>
+    <tr><td>2 October 2026</td><td>Added OpenStreetMap, provider of the Standard layer</td></tr>
   </tbody>
 </table>
 </div>
 </main>
-
-<footer class="site">Bivouac is free software, released under the GPL-3.0 licence.</footer>
-
-</div>
+<footer class="bas"><div class="col">
+  <nav><a href="https://github.com/sebastienraison/Bivouac">Source code</a><a href="./#site">Home</a></nav>
+  © 2026 Sébastien Raison. Bivouac is free software, under the GPL-3.0 licence.
+</div></footer>
 </body>
 </html>
