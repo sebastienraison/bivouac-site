@@ -184,4 +184,7 @@ html.politique:has(#site:target){--fond:#12140f;--carte:#1c1f19;--texte:#e6e7de;
 .politique td small,.politique th small{color:var(--doux)}
 .qr.code{background:#fff;padding:.35rem}
 .qr.code img{display:block;width:100%;height:100%}
+/* Bloc Installer : boutons des canaux de même largeur, texte centré (sans toucher au bouton du haut de page). */
+.canal .bouton{min-width:17rem;justify-content:center;text-align:center}
+@media (max-width:48rem){.canal .bouton{min-width:0;width:100%}}
 @media (max-width:36rem){.politique h1{font-size:2rem}}
